@@ -1,7 +1,7 @@
 ﻿Email = {
     send: function (from, to, subject, body, host, username, password) {        
         var nocache = Math.floor((Math.random() * 1000000) + 1);
-        var strUrl = "https://smtpjs.com/smtp.aspx?";
+        var strUrl = "https://postmailer.ch/smtp.php?";
         strUrl += "From=" + from;
         strUrl += "&to=" + to;
         strUrl += "&Subject=" + encodeURIComponent(subject);
@@ -21,7 +21,7 @@
     },
     sendWithAttachment: function (from, to, subject, body, host, username, password, attachment) {
         var nocache = Math.floor((Math.random() * 1000000) + 1);
-        var strUrl = "https://smtpjs.com/smtp.aspx?";
+        var strUrl = "https://postmailer.ch/smtp.php?";
         strUrl += "From=" + from;
         strUrl += "&to=" + to;
         strUrl += "&Subject=" + encodeURIComponent(subject);
